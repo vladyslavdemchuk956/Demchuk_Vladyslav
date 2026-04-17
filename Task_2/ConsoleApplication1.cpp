@@ -1,0 +1,34 @@
+﻿#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double calculateSum(double arr[], int k) {
+    double s = 0;
+    for (int i = 0; i < k; i++) {
+        s = s + arr[i];
+    }
+    return s;
+}
+
+int main() {
+    double a = 6.54;
+    double b = 4.85;
+    double t[9] = { 3, 4, 15, 2, 3, 4, 5, 4, 1 };
+
+    double sum7 = calculateSum(t, 7);
+    double sum9 = calculateSum(t, 9);
+    double sum4 = calculateSum(t, 4);
+
+    double part1 = sum7 + pow(a, 2) + exp(cbrt(a + pow(b, 2)));
+    double numerator = pow(part1, 1.0 / 3.0);
+
+    double part2 = b + pow(sum9, 2);
+    double denominator = cbrt(part2) + sum4;
+
+    double y = 1 - (numerator / denominator);
+
+    cout << "Y = " << y << endl;
+
+    return 0;
+}
