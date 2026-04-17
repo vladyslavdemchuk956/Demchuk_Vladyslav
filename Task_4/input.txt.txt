@@ -1,0 +1,4 @@
+Hello world.
+Programming in C++ is very interesting and useful.
+The weather is nice today.
+Learning new things makes us smarter every day.

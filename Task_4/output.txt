@@ -1,0 +1,3 @@
+Sentence 1: Hello world.
+Sentence 2: Programming in C++ is very interesting and useful.
+Difference: 3500
