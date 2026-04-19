@@ -69,7 +69,6 @@ int main() {
             }
             fin.close();
 
-            // Сортування за сумою оцінок
             sort(games.begin(), games.end(), [](Game a, Game b) {
                 return (a.criticScore + a.userScore) > (b.criticScore + b.userScore);
                 });
